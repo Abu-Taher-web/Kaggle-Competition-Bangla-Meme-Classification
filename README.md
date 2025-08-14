@@ -1,6 +1,6 @@
 <div align="center">  
   <h1 align="center">  
-    <img src="Icon/project_banner.png" alt="Project Banner" width="200">  
+    <img src="Icons/bapparaz-ami-bissash-kori-na-meme-template.png" alt="Project Banner" width="250">  
     <br>Hate Speech and Offensive Content Detection in Bangla Memes Using Multimodal Deep Learning and Transformer
   </h1>  
 
