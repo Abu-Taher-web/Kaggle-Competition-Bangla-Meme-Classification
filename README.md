@@ -49,6 +49,15 @@
 
 This study presents a multimodal deep learning framework for detecting hate speech and offensive content in Bangla memes, as part of the HASOC (Hate Speech and Offensive Content) 2025 competition on Kaggle. The dataset comprises 2,693 training and 1,821 test samples, each annotated across four classification tasks: Sentiment, Sarcasm, Vulgarity, and Abuse. We propose a dual-branch architecture integrating a convolutional neural network (ResNet50 or ResNet152) for image feature extraction and a transformer-based language model (BUET\_CSE\_BanglaBERT, SagarSharkar BanglaBERT, or XLM-RoBERTa-base) for text encoding. The visual and textual embeddings are projected into a common latent space, concatenated, and passed through a multi-head classification module, enabling prediction of all four tasks. Experiment shows high accuracy across all categories, with the best-performing configuration (ResNet50 + BUET\_CSE\_BanglaBERT) achieving up to 0.990 accuracy in binary tasks and 0.954 accuracy in sentiment classification on the validation set. While binary classification tasks such as Sarcasm and Vulgarity achieve near-perfect performance, sentiment polarity remains the most challenging due to class overlap. The proposed model ranked 7th out of 17 teams (23 participants) on the competition leaderboard with a macro F1-score of 0.5763, compared to the top score of 0.6276, demonstrating competitive performance in a challenging multimodal classification setting.
 
+## Architecture
+For this project I performed feautre level fushion. Feature from image and text branch are cocatenated and passed through the dense layer before the classification layer. 
+
+<br>
+<br>
+<img src="Report/Model architecture.png"><br>
+<p align="center"><b>Figure 1:</b> Model architecture</p>
+<br>
+<br>
 
 ## Dataset Overview
 
@@ -135,7 +144,7 @@ I have done multiple experiments with different combination of text and image ba
 
 ### Training History
 
-The training history shown in *Figure 1*, demonstrates rapid convergence and consistently high performance across all four classification tasks: **Sentiment, Sarcasm, Vulgarity, and Abuse**.
+The training history shown in *Figure 2*, demonstrates rapid convergence and consistently high performance across all four classification tasks: **Sentiment, Sarcasm, Vulgarity, and Abuse**.
 
 **Accuracy**
 
@@ -167,7 +176,7 @@ These results indicate that **multimodal fusion** of **ResNet50 (visual features
 <br>
 <br>
 <img src="Result_Resnet50_and_BuetCSE_BanglaBert/training_history.png"><br>
-<p align="center"><b>Figure 1:</b> Training history.</p>
+<p align="center"><b>Figure 2:</b> Training history.</p>
 <br>
 <br>
 
