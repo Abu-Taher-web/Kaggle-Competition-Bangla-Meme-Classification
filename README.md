@@ -130,12 +130,12 @@ _**Table 3. Sarcasm label distribution in the training dataset.**_
 
 
 ## Results
-I have complemented multiple experiments with multiple models and their combination. Everything is presented in my report. Here I am providing the best results.
+I have done multiple experiments with different combination of text and image based models. Everything is presented in my report. Here I am providing the best results. For this experiment I used **Resnet50** for image branch and **buetcsebanglabert** for the text branch.
 
 
 ### Training History
 
-The training history for **Experiment 1**, shown in *Figure 1*, demonstrates rapid convergence and consistently high performance across all four classification tasks: **Sentiment, Sarcasm, Vulgarity, and Abuse**.
+The training history shown in *Figure 1*, demonstrates rapid convergence and consistently high performance across all four classification tasks: **Sentiment, Sarcasm, Vulgarity, and Abuse**.
 
 **Accuracy**
 
@@ -164,15 +164,17 @@ These results indicate that **multimodal fusion** of **ResNet50 (visual features
   * A relatively simple dataset
   * Correlated label structures (one category serving as a cue for others).
 
+<br>
+<br>
 <img src="Result_Resnet50_and_BuetCSE_BanglaBert/training_history.png"><br>
-<p align="center"><b>Figure 1:</b> Confusion matrices for sentiment, abuse, sarcasm, and vulgarity classification tasks.</p>
+<p align="center"><b>Figure 1:</b> Training history.</p>
 <br>
 <br>
 
 
 ### Confusion Matrix Analysis
 
-The confusion matrices for Experiment 1 (ResNet50 + BUET\_CSE\_BanglaBERT) further confirm the high classification performance across all four categories.
+The confusion matrices for the experiment (ResNet50 + BUET\_CSE\_BanglaBERT) further confirm the high classification performance across all four categories.
 
  **Abuse**
 
@@ -239,7 +241,7 @@ The confusion matrices confirm the **high precision and recall** observed in the
 
 ### Classification Metrics
 
-Table 1 presents the classification metrics for the four tasks:
+Table 9 to 12 presents the classification metrics for the four tasks:
 
 * **Abuse:** 0.980 accuracy
 * **Sarcasm:** 0.990 accuracy
